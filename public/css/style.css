@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+main{
+    margin: 30px;
+}
+.titulo{
+    font-size: 50px;
+    text-align: center;
+    margin: 40px;
+    text-transform: uppercase;
+}
+#pokeBox{
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+}
+figure img{
+    width: 100%;
+    max-width: 250px;
+    height: 200px;
+}
+img{
+    display: block;
+}
+figure figcaption{
+    margin-top: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media(min-width:768px){
+    #pokeBox{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(min-width:1024px){
+    #pokeBox{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
